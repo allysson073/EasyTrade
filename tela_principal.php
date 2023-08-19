@@ -1,19 +1,9 @@
 <?php
-    session_start();
-
-    if(!isset($_SESSION['autenticado'])){
-        header('location: index.php');
-    }
+    require "menu.php";
 ?>
 
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyTrade</title>
-  </head>
-
+<html>
   <body>
-    <h1> Finalmente </h1>
+    
   </body>
 </html>
