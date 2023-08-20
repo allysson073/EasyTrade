@@ -20,15 +20,26 @@
 
   <body>
 
-    <div class="container" style="border: 1px solid red">
-        <div class="row" style="border: 1px solid red">
-            <div class="col-6">Logomarca</div>
-            <div class="col-6 text-right">
-                usuarios
+    <div class="container">
+        <div class="row">
+            <img class="col-6" alt="logomarca EasyTrade" style="padding: 5px 0"></img>
+            <div class="col-6 dropdown text-right">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Usuário
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Opção 1</a>
+                <a class="dropdown-item" href="#">Opção 2</a>
+                <a class="dropdown-item" href="#">Opção 3</a>
+              </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+      
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
