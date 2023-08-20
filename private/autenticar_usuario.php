@@ -14,14 +14,12 @@
     $stmt -> bindValue(':login', $_POST['login']);
     $stmt -> execute();
 
-    $autenticador = $stmt -> fetchAll(PDO::FETCH_OBJ);
+    $lista = $stmt -> fetchAll(PDO::FETCH_OBJ);
 
-    $nome = $autenticador[0]->nome . ' ' . $autenticador[0]->sobrenome;
-
-    if($autenticador != null){
-        if($autenticador[0]->senha == $_POST['senha']){
+    if($lista != null){
+        if($lista[0]->senha == $_POST['senha']){
             $_SESSION['autenticado'] = 'sim';
-            header('location: tela_principal.php?nome=' . $nome);
+            header('location: tela_principal.php');
         } else {
             header('location: index.php?retorno=senha_invalida');
         }
