@@ -6,6 +6,7 @@
 
     if($acao == 'autenticar_usuario'){
         require "autenticar_usuario.php";
+        require "usuarios.php";
     }
 
 ?>
